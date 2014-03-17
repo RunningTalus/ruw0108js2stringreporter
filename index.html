@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title>js2stringreporter</title>
+</head>
+<body>
+<div class="container">
+<!--charAt
+	toLowerCase
+	toUpperCase
+	substring
+	Enter a word here prompt - All prompts are strings
+	Word entered at prompt becomes the variable
+	Is it a string literal?
+	What is the string.length?
+	What is charAt 2?
+	What is the string from 1-3? str.
+	ALL CAPS
+	no caps
+	What is the word in a sentence?-->
+<script> 
+	var input = prompt("Enter a word here"); 
+	console.log(typeof input);
+	console.log(input);
+	console.log(input.charAt(2));
+	console.log(input.length);
+	console.log(input.substring(1,3));
+	console.log(input.toUpperCase);
+	console.log(input.toLowerCase);
+	console.log("Why did you choose " + input + "?");
+	var aa = typeof input;
+	var bb = input.length;
+	var cc = input.charAt(2);
+	var dd = input.substring(1,3);
+	var ee = input.toUpperCase();
+	var ff = input.toLowerCase();
+	var gg = "Why did you choose " + input + "?" + "\n";
+	var inputa = "You entered: " + input + "." + "\n";
+	var aaa = "You entered this type of primitive: " + aa + "\n";
+	var bbb = "Your word is " + bb + " letters." + "\n"; 
+	var ccc = "The third character in your word is: " + cc + "\n";
+	var ddd = "The second and third letters in your word are: "+ dd + "\n";
+	var eee = "This is your word with all capitalized letters: " + ee + "\n";
+	var fff = "This is your word with no capitalized letters: " + ff + "\n";
+	alert(inputa + aaa + bbb + ccc + ddd + eee + fff + gg);
+</script> 
+<script type="text/javascript"> </script>	
+</div>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="utility.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
